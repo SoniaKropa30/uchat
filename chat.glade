@@ -56,7 +56,7 @@
                     <property name="max_length">65535</property>
                     <property name="placeholder_text" translatable="yes"> Type message</property>
                     <style>
-                      <class name="entry"/>
+                      <class name="send-field"/>
                     </style>
                   </object>
                   <packing>
@@ -73,7 +73,7 @@
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <style>
-                      <class name="button"/>
+                      <class name="send-button"/>
                     </style>
                   </object>
                   <packing>
@@ -192,6 +192,9 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">Type \h for help with chat commands</property>
+                    <style>
+                      <class name="reference"/>
+                    </style>
                   </object>
                   <packing>
                     <property name="x">504</property>
@@ -240,6 +243,9 @@
                             <child>
                               <placeholder/>
                             </child>
+                            <style>
+                              <class name="list_button"/>
+                            </style>
                           </object>
                         </child>
                       </object>
@@ -262,7 +268,7 @@
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <style>
-                      <class name="button"/>
+                      <class name="entry-button"/>
                     </style>
                   </object>
                   <packing>
@@ -278,7 +284,7 @@
                     <property name="can_focus">True</property>
                     <property name="placeholder_text" translatable="yes">Chat name</property>
                     <style>
-                      <class name="entry"/>
+                      <class name="entry-field"/>
                     </style>
                   </object>
                   <packing>
@@ -310,7 +316,7 @@
                     <property name="can_focus">True</property>
                     <property name="placeholder_text" translatable="yes">Friend name</property>
                     <style>
-                      <class name="entry"/>
+                      <class name="entry-field"/>
                     </style>
                   </object>
                   <packing>
@@ -327,7 +333,7 @@
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <style>
-                      <class name="button"/>
+                      <class name="entry-button"/>
                     </style>
                   </object>
                   <packing>
@@ -359,6 +365,9 @@
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
+                    <style>
+                      <class name="theme-button"/>
+                    </style>
                   </object>
                   <packing>
                     <property name="x">314</property>
@@ -373,6 +382,9 @@
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
+                    <style>
+                      <class name="language-button"/>
+                    </style>
                   </object>
                   <packing>
                     <property name="x">833</property>
@@ -394,7 +406,7 @@
       </object>
     </child>
     <style>
-      <class name="window"/>
+      <class name="chat-window"/>
     </style>
   </object>
 </interface>
